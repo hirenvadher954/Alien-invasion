@@ -12,7 +12,8 @@ def run_game():
     ship = Ship(screen)
 
     while True:
-        gf.checks_events()
+        gf.checks_events(ship)
+        ship.update()
         gf.update_screen(ai_setting, screen, ship)
 
 
